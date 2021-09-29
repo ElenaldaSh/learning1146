@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <style>
+			@font-face {
+				font-family: 'Lobster';
+				font-style: normal;
+				font-weight: 400;
+				src: url(http://fonts.gstatic.com/s/lobster/v18/c28rH3kclCLEuIsGhOg7evY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+			}
+			html {height: 100%;}
+			body {
+				font: normal 12pt 'Lobster';
+				background: linear-gradient(#ffffff, #8f8f8f);
+			}
+			@media screen and (min-width: 640px) {
+				p {
+					margin: 0;
+					position:absolute;
+					transition: all 1s;
+				}
+				#p1 {top: 50px; left: 50px;}
+				#p2 {top: 50px; right: 50px;}
+				#p3 {bottom: 50px; left: 50px;}
+				#p4 {bottom: 50px; right: 50px;}
+				#h {
+					position:absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%,-50%);
+				}
+			}
+			@media screen and (min-width: 1200px) {
+				p {animation: steps 3s infinite;}
+				@keyframes steps {
+					25% {transform: translate(50px, 0);}
+					50% {transform: translate(50px, 50px);}
+					75% {transform: translate(0, 50px);}
+				}
+			}
+		</style>
+	 </head>
+    <body>
+		<div align="center">
+			<span id="h">
+				<h1>Несравненное право</h1>
+				<h4>Стихотворение Николая Гумилева</h4>
+			</span>
+			<div align="left" style="display: inline-block">
+				<p id="p1">Созидающий башню сорвется,<br>
+				Будет страшен стремительный лет,<br>
+				И на дне мирового колодца<br>
+				Он безумье свое проклянет.</p>
+
+				<p id="p2">Разрушающий будет раздавлен,<br>
+				Опрокинут обломками плит,<br>
+				И, Всевидящим Богом оставлен,<br>
+				Он о муке своей возопит.</p>
+
+				<p id="p3">А ушедший в ночные пещеры<br>
+				Или к заводям тихой реки<br>
+				Повстречает свирепой пантеры<br>
+				Наводящие ужас зрачки.</p>
+
+				<p id="p4">Не спасешься от доли кровавой,<br>
+				Что земным предназначила твердь.<br>
+				Но молчи: несравненное право —<br>
+				Самому выбирать свою смерть.</p>
+			</div>
+		</div>
+    </body>
+</html>

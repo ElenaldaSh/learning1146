@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Container</title>
+        
+        <style>
+            html {
+                height: 100%;
+            }
+            body {
+                height: calc(100% - 2px);
+                margin: 0;
+                padding: 1px;
+            }
+            .container {
+                background: pink;
+                margin: 100px auto;
+                height: calc(100% - 200px);
+                display: flex;
+                align-items: center;
+            }
+            .item {
+                width: 100px;
+                height: 100px;
+                background: blue;
+                color: yellow;
+                font: bold 30px/100px Arial;
+                text-align: center;
+            }
+            /*
+            .container {
+                justify-content: space-evenly;
+            }
+            @media screen and (max-width: 1500px) {
+                .item:nth-child(odd) {
+                    order: 1;
+                }
+            }
+            @media screen and (max-width: 1200px) {
+                .container {
+                    justify-content: center;
+                }
+            }
+            @media screen and (max-width: 1024px) {
+                .container {
+                    flex-direction: column;
+                }
+            }
+            @media screen and (max-width: 640px) {
+                .item:nth-child(even) {
+                    order: 2;
+                }
+                .container {
+                    justify-content: space-evenly;
+                }
+            }
+            */
+            .container {
+                justify-content: space-evenly;
+                flex-direction: column;
+            }
+            .item:nth-child(odd) {
+                    order: 1;
+            }
+            .item:nth-child(even) {
+                    order: 2;
+            }
+            @media screen and (min-width: 640px) {
+                .item:nth-child(even) {
+                    order: 0;
+                }
+                .container {
+                    justify-content: center;
+                }
+            }
+            @media screen and (min-width: 1024px) {
+                .container {
+                    flex-direction: row;
+                }
+            }
+            @media screen and (min-width: 1200px) {
+                .container {
+                    justify-content: space-evenly;
+                }
+            }
+            @media screen and (min-width: 1500px) {
+                .item:nth-child(odd) {
+                    order: 0;
+                }
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+    </body>
+</html>

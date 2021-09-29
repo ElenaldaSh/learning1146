@@ -1,0 +1,139 @@
+@font-face {
+	font-family: 'Mulish';
+	src: url('Mulish-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+body {
+	font: normal 16px/24px 'Multish';
+	margin:0;
+}
+.container {
+	margin:100;
+	background:pink;
+	position:relative;
+	padding:10px;
+}
+p, h1, h4 {
+	background:white;
+	border-radius:10px;
+	width: 280px;
+	padding:10px;
+}
+@media screen and (min-width: 640px) {
+	.container {
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+		max-width :800px;
+		height:800px;
+		padding:0;
+}
+	p {
+		position:absolute;
+		margin:0;
+	}
+	
+
+	.first {
+		top:50px;
+		left:50px;
+	}
+	.second{
+		top:50px;
+		right:50px;
+	}
+	.third {
+		bottom:50px;
+		left:calc(50%-150px);
+	}
+}	@media screen and (min-width: 1200px) {
+	
+	
+	
+/*axis:hover .move-right{
+    transform: translate(350px,0);
+	-moz-transform: translate(350px,0); 
+}
+
+@keyframes steps {
+	10% {
+		transform: translate(60px, 0);
+	}
+	20% {
+		transform: translate(120px, 60px);
+	}
+	30% {
+		transform: translate(180px, -60px);
+	}
+	40% {
+		transform: translate(240px, 0);
+	}
+	50% {
+		transform: translate(300px, 60px);
+	}
+	60% {
+		transform: translate(360px, -60px);
+	}
+	70% {
+		transform: translate(420px, -120px);
+	}
+	80% {
+		transform: translate(480px, 60px);
+	}
+	90% {
+		transform: translate(540px, 0);
+	}
+}
+
+
+ /.round:hover {
+    transform: rotate(360deg); 
+   }/
+
+/*@keyframes loader {
+  0% {transform:rotate(-45deg)}
+  50%{transform:rotate(-135deg)}
+  100%{transform:rotate(-225deg)}}
+			div {
+				background: url('pic.jpg') center no-repeat;
+				height: 50px;
+				width: 50px;
+				margin: 200px auto;
+			}
+			div:hover {
+  animation: loader 2s ease-in-out infinite;*/
+div {
+	animation: steps 5s infinite step-end;
+}*/
+
+
+
+
+
+/*:root {
+  --radius: 20vmin;
+}
+div {
+  --path-play-state: running;
+  --distance-play-state: running;
+  --anchor-x: 50%;
+  --anchor-y: 50%;
+  --position-x: 50%;
+  --position-y: 50%;
+  --offset-size: sides;
+
+  offset-anchor: 
+    var(--anchor-x)
+    var(--anchor-y);
+  offset-position: 
+    var(--position-x)
+    var(--position-y);
+  
+  offset-path: ray(0deg var(--offset-size));
+  
+  offset-distance: 0vmin;*/
+  
+  img.rot {  animation: 1s linear 0s normal none infinite running rot;  -webkit-animation: 1s linear 0s normal none infinite running rot;  width: 100px;}@keyframes rot {  0% {    transform: rotate(0deg);  }  100% {    transform: rotate(360deg);  }}@-webkit-keyframes rot {  0% {    transform: rotate(0deg);  }  100% {    transform: rotate(360deg);  }}
+  

@@ -1,0 +1,61 @@
+<<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Мой любимый с детства стишок</title>
+        
+        <link href="4.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="container">
+		       
+            .container {
+                justify-content: space-evenly;
+            }
+            @media screen and (min-width: 1500px) {
+                .item:nth-child(odd) {
+                    order: 1;
+                }
+            }
+            @media screen and (min-width: 1200px) {
+                .container {
+                    justify-content: center;
+                }
+            }
+            @media screen and (min-width: 1024px) {
+                .container {
+                    flex-direction: column;
+                }
+            }
+            @media screen and (max-width: 640px) {
+                .item:nth-child(even) {
+                    order: 2;
+                }
+                .container {
+                    justify-content: space-evenly;
+                }
+            }
+            
+			<h1>Парус</h1>
+            
+            <h4>Стихотворение Михаила Лермонтова.</h4>
+            
+            <p class="first">Белеет парус одинокой<br>
+            В тумане моря голубом!..<br>
+            Что ищет он в стране далекой?<br>
+            Что кинул он в краю родном?..</p>
+            
+            <p class="second">Играют волны - ветер свищет,<br>
+            И мачта гнется и скрыпит...<br>
+            Увы! он счастия не ищет<br>
+            И не от счастия бежит!</p>
+            
+            <p class="third">Под ним струя светлей лазури,<br>
+            Над ним луч солнца золотой...<br>
+            А он, мятежный, просит бури,<br>
+            Как будто в бурях есть покой!</p>
+        </div>
+    </body>
+</html>

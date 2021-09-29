@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url('fonts/Oswald-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Oswald';
+  src: url('fonts/Oswald-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Oswald';
+  src: url('fonts/Oswald-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('fonts/OpenSans-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+	margin: 0;
+	font: normal 16px/22px 'OpenSans';
+	color: #999;
+	background: #fff;
+}
+header {
+	height: 890px;
+	background: url('images/header_bg.png') center top no-repeat, linear-gradient(to bottom, #404149 740px, transparent 740px)
+}
+footer {
+	height: 181px;
+	background: #f7654a;
+}
+main {
+	margin: 100px auto 150px;
+	width: 1110px;
+}
+.container {
+	margin: 0 auto;
+	width: 1110px;
+}
+h1 {
+	margin-bottom: 60px;
+	font: 500 normal 36px/53px 'Oswald';
+	text-align: center;
+	text-transform: uppercase;
+	color: #404149;
+}
+.gallery {
+	display: flex;
+	gap: 30px;
+}
+.gal_unit {
+	width: 350px;
+	flex: none;
+}

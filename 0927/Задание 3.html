@@ -1,0 +1,44 @@
+html {
+                height: 100%;
+            }
+            body {
+                height: calc(100% - 2px);
+                margin: 0;
+                padding: 1px;
+            }
+            .container {
+                background: pink;
+                margin: 100px auto;
+                height: calc(100% - 200px);
+                width: 1500px;
+            }
+            @media screen and (max-width: 1540px) {
+                .container {
+                    width: 1200px;
+                }
+            }
+            @media screen and (max-width: 1240px) {
+                .container {
+                    width: 1000px;
+                }
+            }
+            @media screen and (max-width: 1024px) {
+                .container {
+                    width: 700px;
+                }
+            }
+            @media screen and (max-width: 768px) {
+                .container {
+                    width: 600px;
+                }
+            }
+            @media screen and (max-width: 640px) {
+                .container {
+                    width: 400px;
+                }
+            }
+            @media screen and (max-width: 480px) {
+                .container {
+                    width: 300px;
+                }
+            }
