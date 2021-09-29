@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Блочная модель</title>
+        
+        <style>
+            .outer {
+                width: 200px;
+                height: 200px;
+                background: red;
+                margin: 20px auto;
+                display: inline-block;
+            }
+            .inner {
+                width: 100px;
+                height: 200px;
+                background: blue;
+                margin: 50px auto;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="outer">
+            <div class="inner"></div>
+        </div><!--
+        --><div class="outer">
+            <div class="inner"></div>
+        </div>
+    </body>
+</html>

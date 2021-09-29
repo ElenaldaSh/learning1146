@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Таблица</title>
+        
+        <style>
+            td {
+                border: 1px solid #000;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <table style="border:1px solid #000; border-collapse:separate;width:100%;text-align:center;">
+            <caption>Заголовок</caption>
+            
+            <thead>
+                <tr>
+                    <th>Столбец 1</th>
+                    <th>Столбец 2</th>
+                    <th>Столбец 3</th>
+                    <th>Столбец 4</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td rowspan="2">4</td>
+                </tr>
+                
+                <tr>
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                </tr>
+                
+                <tr>
+                    <td>A</td>
+                    <td colspan="3">B</td>
+                </tr>
+                
+                <tr>
+                    <td>aaaaaaaaa</td>
+                    <td>b</td>
+                    <td>ccc</td>
+                    <td>ddddd</td>
+                </tr>
+            </tbody>
+            
+            <tfoot>
+                <tr>
+                    <td>column</td>
+                    <td>column column</td>
+                    <td>column column column column</td>
+                    <td>column</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>

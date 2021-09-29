@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Заголовок</title>
+        
+        <style>
+            html {
+                height: 100%;
+            }
+            body {
+                margin: 0;
+                min-height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+            header {
+                height: 100px;
+                background: blue;
+                flex: none;
+            }
+            footer {
+                height: 100px;
+                background: red;
+                flex: 0 0 auto;
+            }
+            main {
+                background: yellow;
+                flex: 1 0 auto;
+                display: flex;
+                padding-top: 50px;
+                position: relative;
+            }
+            h1 {
+                background: white;
+                margin: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 50px;
+            }
+            aside {
+                flex: 0 0 300px;
+                background: lightgrey;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <header>
+            <p>Тут логотип и форма поиска</p>
+            
+            <nav>
+                <p>Тут меню шапки</p>
+            </nav>
+        </header>
+        
+        <main>
+            <h1>Главный заголовок</h1>
+            
+            <aside>
+                <nav>
+                    <p>Боковая колонка с меню каталога</p>
+                </nav>
+            </aside>
+            
+            <article>
+                <section>
+                    <p>Тут контент секции</p>
+                </section>
+                
+                <section>
+                    <h2>Заголовок секции</h2>
+                    
+                    <p>Тут контент секции</p>
+                </section>
+                
+                <section>
+                    <h2>Заголовок секции</h2>
+                    
+                    <p>Тут контент секции</p>
+                </section>
+                
+                <section>
+                    <h2>Заголовок секции</h2>
+                    
+                    <p>Тут контент секции</p>
+                </section>
+            </article>
+        </main>
+        
+        <footer>
+            <nav>
+                <p>Тут меню футера</p>
+            </nav>
+            
+            <p>Тут информация о копирайте и прочие элементы подвала</p>
+        </footer>
+    </body>
+</html>

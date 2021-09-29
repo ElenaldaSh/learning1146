@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Обед из трех блюд</title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Первое</legend>
+                <p>Выберите суп</p>
+                <p><label><input type="radio" name="soup" value="borzhch"> Борщ</label></p>
+                <p><label><input type="radio" name="soup" value="bouillon"> Бульон</label></p>
+                <p><label><input type="radio" name="soup" value="kharcho"> Харчо</label></p>
+                <p><label><input type="checkbox" name="bread" value="with" checked> С хлебом</label></p>
+            </fieldset>
+            <fieldset>
+                <legend>Второе</legend>
+                <p>Выберите блюдо</p>
+                <p><select name="second">
+                    <option value="plov">Плов</option>
+                    <option value="cutlet">Котлета с гарниром</option>
+                    <option value="chicken">Курица жареная</option>
+                </select></p>
+            </fieldset>
+            <fieldset>
+                <legend>Третье</legend>
+                <p>
+                    <label>Выберите десерт</label>
+                    <input type="text" name="dessert" placeholder="Компот">
+                </p>
+            </fieldset>
+            <button>Выбрать</button>
+        </form>
+    </body>
+</html>

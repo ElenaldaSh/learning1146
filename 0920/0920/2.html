@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Grid layout</title>
+        <style>
+            .father {
+                display: grid;
+                background: pink;
+                width: 600px;
+                height: 600px;
+                gap: 20px;
+                grid-template: repeat(3, auto) / repeat(2, auto)
+            }
+            .child {
+                border: 2px dashed #000;
+            }
+            .first {
+                background: yellow;
+                grid-area: 3 / 1 / 4 / 2;
+            }
+            .second {
+                background: green;
+            }
+            .third {
+                background: red;
+                grid-area: 2/2/4/3;
+            }
+            .fourth {
+                background: blue;
+                grid-area: 1 / 1 / 2 / 3;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="father">
+            <div class="child first">1</div>
+            <div class="child second">2</div>
+            <div class="child third">3</div>
+            <div class="child fourth">4</div>
+        </div>
+    </body>
+</html>

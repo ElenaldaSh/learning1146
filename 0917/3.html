@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Flex Box</title>
+        
+        <style>
+            .wrapper {
+                width: 80vw;
+                height: 80vw;
+                margin: 50px auto;
+                background: blue;
+                display: flex;
+                gap: 10px;
+            }
+            .unit {
+                width: 96px;
+                height: 96px;
+                border: 2px dashed #000;
+                background: green;
+                flex: 1 1 auto;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="wrapper">
+            <div class="unit" style="order:1">1</div>
+            <div class="unit" style="flex-grow:0">2</div>
+            <div class="unit" style="flex-grow:5">3</div>
+            <div class="unit" style="flex-grow:1">4</div>
+            <div class="unit" style="order:0">5</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Футер к низу</title>
+        
+        <style>
+            html {
+                height: 100%;
+            }
+            body {
+                margin: 0;
+                background: #ddd;
+                font-family: Arial;
+                height: 100%;
+            }
+            .wrapper {
+                /*min-height: 100%;
+                padding-bottom: 100px;
+                box-sizing: border-box;*/
+                /*position: relative;*/
+                min-height: calc(100% - 200px);
+            }
+            .redsquare {
+                width: 100px;
+                height: 100px;
+                background: red;
+            }
+            .blueline {
+                background: blue;
+                height: 100px;
+            }
+            .footer {
+                /*position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;*/
+                /*margin-top: -100px;*/
+            }
+        </style>
+    </head>
+    <body>
+        <div class="blueline"></div>
+        <div class="wrapper">
+            <div>Text text text.</div>
+            <div>Text text text.</div>
+        </div>
+        <div class="blueline footer"></div>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Transform</title>
+        
+        <style>
+            img {
+                height: 300px;
+                margin: 100px auto;
+                display: block;
+                /*transform: rotateX(45deg) rotateY(45deg) rotateZ(45deg);*/
+                /*transform: scaleX(2) scaleY(50%);*/
+                /*transform: skew(5deg, 20deg);*/
+                /*transform-origin: left top;*/
+                /*backface-visibility: hidden;*/
+                transition: height 1500ms steps(5), transform 1.5s ease;
+            }
+            img:hover {
+                transform: rotate(45deg);
+                height: 200px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <img src="zver.png" alt="zver">
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Transform</title>
+        
+        <style>
+            @keyframes hod {
+				0% {
+					transform: translate(500px);
+				}
+				100% {
+					transform: translate(-500px);
+				}
+			}
+			img {
+                height: 300px;
+                margin: 100px auto;
+                display: block;
+				animation: hod .5s linear infinite;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <img src="zver.png" alt="zver">
+    </body>
+</html>
